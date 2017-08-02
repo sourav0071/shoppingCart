@@ -7,15 +7,38 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>onlileShopping Maven Webapp</name>
 	<url>http://maven.apache.org</url>
+	
+	<properties>
+		<javaee.version>7.0</javaee.version>
+		<spring.web.mvc.version>4.3.10.RELEASE</spring.web.mvc.version>
+	</properties>
+	
 	<dependencies>
+	
+	<!-- JSTL Dependency -->
+		<dependency>
+		    <groupId>jstl</groupId>
+		    <artifactId>jstl</artifactId>
+		    <version>1.2</version>
+		</dependency>
+	
+	<!-- Spring Web MVC Dependency -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-webmvc</artifactId>
+		    <version>${spring.web.mvc.version}</version>
+		</dependency>
+			
+	<!--  j2ee api Dependency--> 
 		<!-- https://mvnrepository.com/artifact/javax/javaee-api -->
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-api</artifactId>
-			<version>7.0</version>
+			<version>${javaee.version}</version>
 			<scope>provided</scope>
 		</dependency>
 
+	<!-- Junit Dependency -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
